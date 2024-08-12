@@ -1,0 +1,87 @@
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 45px;
+    width: 80%;
+    max-width: 1200px;
+    margin: var(--spacing-large) auto;
+
+}
+
+
+.products-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px 20px;
+    background-color:  var(--color-light);
+    box-shadow: 0px 0px 19px 2px rgba(0, 144, 255, 0.2);
+    border-radius: 6px;
+    
+}
+
+.products-element__name{
+    word-spacing: -1px;
+    margin-bottom: auto;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.products-element__img{
+    width: 100%;
+    height: 270px;
+    margin-top: var(--spacing-medium);
+    object-fit: contain;
+}
+.products-element__price{
+    word-spacing: -7px;
+    margin-top: -12px;
+    font-size: 20px;
+    font-family: Andale Mono, monospace;
+    font-weight: bold;
+    text-align: center;
+}
+.products-element__btn{
+    margin-top: var(--spacing-medium);
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: Andale Mono, monospace;
+  font-size: 15px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+   background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.products-element__btn:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
+.products-element__btn_active{
+    background-color: red;
+}
+
+
+.products-element__discount{
+    word-spacing: -5px;
+    text-align: center;
+    text-decoration: line-through;
+    color: rgb(130, 130, 130);
+    font-family: Andale Mono, monospace;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.products-element__nodiscount{
+    margin-top: 25px;
+}

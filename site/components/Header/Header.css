@@ -1,0 +1,26 @@
+.header-container{
+    display: flex;
+    height: 50px;
+    padding: var(--spacing-small);
+    background-color: #367AF6;
+}
+
+.basket{
+    display: flex;
+    margin-left: auto;
+}
+
+.header-counter{
+    margin-top: -15px;
+    padding-right: var(--spacing-small);
+    color: white;
+    font-size: 17px;
+    font-family: Andale Mono, monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.basket-image{
+    cursor: pointer;
+    transform: scale(-1, 1)
+}
